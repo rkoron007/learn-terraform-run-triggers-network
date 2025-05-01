@@ -2,6 +2,15 @@
 # SPDX-License-Identifier: MPL-2.0
 
 terraform {
+
+    cloud {
+      organization = "rose-testing"
+
+    workspaces {
+      name = "learn-terraform-run-triggers-network"
+    }
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
